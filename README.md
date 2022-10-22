@@ -12,7 +12,7 @@ Raspberry Pi
 1. 點開APP後點選Gatt Server
 2. 右上角三個點點開選擇set Service
 3. 為了方便觀察可以只留下0xfff1此Characteristic以及0x2902此Descriptor(Property勾選Notify)，並按下Apply
-![Alt text](docs/figure1.jpg?raw=true | width=30)
+<img src=docs/figure1.jpg height="400"/>
 4. 按下Start Advertising
 
 ## 實驗步驟(Raspberry Pi部分)
@@ -26,5 +26,6 @@ sudo python ble_scan_connect.py
 5. 查看裝置列表並輸入您手機的裝置代號
 
 ## 實驗結果
-![Alt text](docs/figure2.jpg?raw=true | width=30)
+<img src=docs/figure2.jpg height="400"/>
+
 由上圖可以看出有收到更改CCCD值的請求，但實際上由於BLE TOOL本身的原因並未實際修改成功
